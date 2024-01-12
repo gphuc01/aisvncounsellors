@@ -1,0 +1,465 @@
+body {
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url(../assets/PlayfairDisplay-Bold.ttf);
+}
+
+#nav {
+  position: fixed;
+  display:block;
+  top:0;
+  width:100%;
+  transition:top 0.5s;
+  z-index: 180;
+}
+.top-bar {
+  background-color: white;
+  margin-bottom:-1%;
+  width:100%;
+  height:120px;
+  max-width:100%;
+  margin:0 auto;
+}
+.navbar{
+  width:100%;
+  margin-left:-1.5%;
+  padding-right: 25px;
+  background-image: linear-gradient(to right,rgb(173, 217, 176),rgb(52, 160, 255));
+  border:none;
+  display:flex;
+  justify-content:end;
+  align-items:center;
+  height:63px;
+  
+}
+.website-logo {
+  display:inline-block;
+  width: 300px;
+  height:90px;
+  object-fit:cover;
+  margin-top:10px;
+  transition:opacity 0.5s;
+}
+
+.footer {
+  background-color:#178BC3;
+  padding-bottom:50px;
+  width:100%;
+  color:white;
+}
+
+.website-logo:hover {
+  opacity:0.3;
+}
+
+.footer-logo {
+  display:inline-block;
+  margin-top:20px;
+  width: 500px;
+  height:200px;
+  object-fit:cover;
+  margin-top:10px;
+  transition:opacity 0.5s;
+}
+
+.footer-sitemap {
+  display:inline-block;
+  margin-left:50px;
+  width:180px;
+  vertical-align:top;
+  margin-top:20px;
+}
+
+.footer-header {
+  font-size:24px;
+  font-family:Verdana;
+}
+
+.footer-text a{
+  font-size:18px;
+  color:white;
+  text-decoration:none;
+  font-family:Verdana;
+  transition: margin-left 0.4s;
+}
+
+.footer-text a:hover {
+  margin-left:10px;
+}
+
+.footer-contacts {
+  display:inline-block;
+  margin-top:20px;
+  margin-left:150px;
+  vertical-align:top;
+}
+
+.icon {
+  margin-right:20px;
+  fill:white;
+}
+
+.navigation {
+  min-height:185px;
+}
+
+
+
+ul {
+  list-style-type:none;
+  overflow:auto;
+  margin-top:0px;
+  margin-bottom:0px;
+  flex-direction:row;
+  transition:0.5s;
+}
+
+li a:hover {
+  background-color:white;
+  color:green;
+}
+
+li {
+  display:inline-block;
+}
+
+li a {
+  color:white;
+  font-family:Verdana;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display:block;
+  text-decoration:none;
+  font-size:19px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.hamburger {
+  position:relative;
+  width:30px;
+  height:4px;
+  background:white;
+  border-radius:10px;
+  cursor:pointer;
+  align-items:center;
+  z-index:2;
+  transition:0.3s;
+
+
+}
+.hamburger:before,.hamburger:after {
+  content:"";
+  position:absolute;
+  height:4px;
+  right:0;
+  background:white;
+  border-radius:10px;
+  transition:0.3s;
+
+}
+
+.hamburger:before {
+  top:-10px;
+  width:30px;
+}
+
+.hamburger:after {
+  top:10px;
+  width:30px;
+}
+
+.toggle-menu {
+  position:absolute;
+  width:30px;
+  height:100%;
+  cursor:pointer;
+  opacity:0;
+  z-index:3;
+}
+
+.hamburger,.toggle-menu {
+  display:none;
+
+}
+
+.navbar input:checked ~ .hamburger {
+  background:transparent;
+
+}
+
+.navbar input:checked ~ .hamburger:before {
+  top:0;
+  transform: rotate(-45deg);
+  background:black;
+  width:30px;
+}
+
+.navbar input:checked ~ .hamburger:after {
+  top:0;
+  transform: rotate(45deg);
+  width:30px;
+  background:black;
+}
+
+.navbar input:checked ~ .nav-menu {
+  right:0;
+  box-shadow: -20px 0 20px rgba(0,0,0,0.3);
+}
+
+@media screen and (max-width:990px) {
+  .hamburger, .toggle-menu {
+    display:block;
+  }
+
+  .nav-menu {
+    justify-content:start;
+    flex-direction:column;
+    align-items:center;
+    position:fixed;
+    top:0;
+    padding-left:0;
+    right:-300px;
+    background:white;
+    width:300px;
+    height:100%;
+    padding-top: 120px;
+  }
+  
+  .nav-menu li {
+    width:100%;
+  }
+
+  .nav-menu li a {
+    width:200px;
+    padding:20px;
+    font-size:20px;
+    color:black;
+  }
+
+  .nav-menu li a:hover {
+   background-color:grey;
+  }
+
+  
+}
+
+
+
+/* These settings change how the text that is being emphasized in my website must look based on each and every aspect of the p and the h1 elements. 
+You can also notice that there's quite a lot of white space throughout my site and this is because I don't want everything to look too compacted so that 
+it is also more eye-catching in a way via creating emphasis on the actual thing that there are free spaces around.*/ 
+
+.scheduling-text {
+  padding-top:200px;
+  color:white;
+  background-color:black;
+  font-family:verdana;
+  padding-bottom:50px;
+  text-align:center;
+}
+
+.scheduling-text h1 {
+  font-size:65px;
+  font-family:"Playfair";
+  padding-bottom:20px;
+}
+
+.scheduling-text p {
+  font-size:30px;
+  width:70vw;
+  margin-left:15vw;
+  padding-bottom:30px;
+}
+
+
+/* This css codes for the section below that and determines what the on-off div would really look like in the site.
+This is also where I included buttons to remind/redirect users back to the scheduling form should they want to find it again. 
+Overall, this is where I changed the layout, colors, and style of the on-off div */ 
+.on-off {
+  margin-top:0px;
+  width:100%;
+  margin-bottom:50px;
+}
+
+.on-off-text {
+  width:45vw;
+  text-align:center;
+  font-size:28px;
+  display:inline-block;
+  margin:60px;
+  align-items:center;
+}
+
+.on-off-text h1 {
+  text-align:left;
+  margin-bottom:40px;
+  font-family:"Playfair"
+}
+
+.on-off-text p {
+  text-align:left;
+  font-family:Verdana;
+  margin-bottom:50px;
+}
+
+.on-off-text button {
+  background-color:green;
+  padding:14px;
+  border:solid;
+  border-width:3px;
+  border-radius:15px;
+  border-color:green;
+  color:white;
+  font-size:20px;
+  font-family:Verdana;
+  transition:0.4s;
+}
+
+.on-off-text button:hover {
+  background:transparent;
+  color:green;
+
+}
+
+.on-off img {
+  align-items:center;
+  height:400px;
+  width:600px;
+  border-radius:10px;
+}
+
+
+
+/* These CSS codes specify the background and help me create that smooth linear gradient. 
+Additionally this is also where I emphasize on the week schedule by portraying the different colors and make it easier to read*/ 
+.week-schedule {
+  background-image:linear-gradient(to top,rgb(173, 217, 176),rgb(52, 160, 255));
+  color:white;
+  text-align:center;
+  padding-bottom:50px;
+  padding-top:10px;
+  font-family:"Playfair";
+  font-size:26px;
+}
+
+#calendar-image {
+  width:90vw;
+  height:75vh;
+  border-radius:20px;
+}
+
+
+
+/* Since this is where some of the site's functions also come in, I also made the settings for the fonts a bit larger and change up the color of the text
+so that I can create emphasis. Here is where I also try to maintain the backgroound color so that it looks smooth and essentially
+catches the eye of my users.*/ 
+.question {
+  background-image:linear-gradient(to bottom,rgb(173, 217, 176),#178BC3);
+  color:black;
+}
+
+.inquiries {
+  margin-top:0x;
+  margin-bottom:50px;
+  font-size:28px;
+  font-family:Verdana;
+  margin-left:40px;
+  width:90vw;
+}
+
+.inquiries h1 {
+  margin-top:0px;
+  padding-top:30px;
+  margin-left:60px;
+  margin-bottom:40px;
+  font-family:"Playfair";
+}
+
+.inquiries p {
+  margin-left:60px;
+  font-family:Verdana;
+}
+
+
+
+/* These factors simply only affect the appearance of my layout this time. It mainly focuses on helping me create
+an emphasis on these functions so that users know where to find it and use it whenever they feel like it's necessary As such, 
+this seciton was where I also used a  different color for both the text and seperate div section background color so that it looks more prominent.
+I also made sure to code it so that the forms contiune to maintain the same aspect so that there's not too many differnet colors being used*/ 
+.qadiscuss {
+  width:80vw;
+  margin-left:7vw;
+  background-color:rgb(105, 177, 190);
+  border-radius:20px;
+  padding-top:30px;
+  padding-left:50px;
+  padding-right:50px;
+  padding-bottom:50px;
+  font-family:Verdana;
+  font-size:20px;
+  border:solid;
+  border-color:white;
+  color:white;
+  border-width:5px;
+}
+
+#form {
+  margin-top:50px;
+  margin-bottom:30px;
+}
+
+.qadiscuss input {
+  display:block;
+  border-radius:10px;
+  padding:15px;
+  font-size:15px;
+  width:600px;
+  margin-bottom:30px;
+  border-color:white;
+  border-style:solid;
+  border-width:4px;
+  background-color:#69B1BE;
+  color: white;
+  font-family:Verdana;
+}
+
+::placeholder {
+  color:white;
+  font-family:Verdana;
+}
+
+
+.qadiscuss button {
+  display:block;
+  margin-top:30px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-bottom:10px;
+  padding-top:10px;
+  background-color:green;
+  color:white;
+  border-width:4px;
+  border-color:green;
+  border-style:solid;
+  border-radius:15px;
+  font-size:18px;
+  transition:0.4s;
+  text-decoration:none;
+}
+
+.qadiscuss button:hover {
+  border-color:white;
+  background:transparent;
+}
+
+.qadiscuss a {
+  text-decoration:none;
+}
+

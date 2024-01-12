@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <!-- These ones provide additional information on the site and allowing the website's setting to be adjusted
+as well as making sure the text is displayed correctly-->
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  <meta name="author"coontent="Ken Luu">
+  <title>AISVN Counselling - Home</title>
+
+<!--These are the link sheets, they are what allows the html to connect and recieve codes from CSS files other than this one
+in order to code for this page-->  
+  <link rel="stylesheet" href="styles/home.css">
+
+  <!--These are the codes for the allowing me to use custom fonts online freely-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Josefin+Sans&family=Playfair+Display&family=Teko&display=swap" rel="stylesheet">
+  
+  <!--This Javascript code section specfically encodes for maximizing space so that the navbar hides when you scroll down
+  by providing exaction conditions and justfiying these conditions-->
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("nav").style.top = "0";
+      } else {
+        document.getElementById("nav").style.top = "-183px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+</head>
+<!--Like always, 
+I also made sure the space is spaced out and that the layout consistently uses bright colors in order to target the younger audiences more effectively.-->
+<body>
+  
+  
+  <!--This is the html for the main navigation bar that you see-->
+<div id="nav">
+  <nav class="navigation">
+    <!--Top bar is the part with the logo alone-->
+    <div class="top-bar">
+      
+      <a href="index.html"><img class="website-logo" src="mentalhealthwebsite-pictures/counsellinglogo.png" alt="AISVN Counselling Logo"></a>
+      
+      
+    </div>
+    <div class="navbar">
+      <!--This here is the hamburger menu hidden html that only activates at a certain screen width and allows the site
+      to become more responsive-->
+      <input type="checkbox" class="toggle-menu">
+      <div class="hamburger"></div>
+
+      <!--These are the different links/sections that will take you to other sites-->
+      <ul class="nav-menu">
+      <li class="nav-item"><a href="index.html">Home</a></li>
+      <li class="nav-item"><a href="ourteam.html" >Our Team</a></li>
+      <li class="nav-item"><a href="howitworks.html">How It Works</a></li>
+      <li class="nav-item"><a href="learnmore.html">Learn More</a></li>
+      </ul>
+    </div>
+
+  </nav>
+</div>
+
+
+<div class="home-content">
+
+  
+
+  <!--This section is the text section where the main purpose and context of the website is summarized and can direct 
+  users instantly to the form-->
+  <div class="sec1">
+    <h1 class="header1">The key to happiness</h1>
+    <p class="text1">
+    In developing this project, we aim to provide a space where students<br>  can be themselves and 
+    comfortably connect with 
+    qualified <br> counsellors to restore their inner peace. 
+    </p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZ7QX6vh8rJaWVQTrFP4QTGu0DSLw4C1Qr3VdNYV2V_eb4fw/viewform">
+    <button class="schedule-button">Schedule a Meeting</button>
+    </a>
+  </div>
+
+
+  <div class="sec2">
+    <!--This section is the code for the quote section that updated manually-->
+    <div class="quote">
+    <h1>Weekly Health Tip</h1>
+    </p>
+    <p class="quote-text">
+    "Just because no one else can heal you or do you inner work for you
+    <br> Doesn't mean you can, should, or need to do it alone."
+    </p>
+    </div>
+    <!--This section displays the big mental health section with the title and the text-->
+    <div class="mental-health">
+    <h2 class="header2">Mental Health</h2>
+    <p class="text2">Mental health encompasses emotional, psychological, and social well-being, influencing cognition, perception, and behavior. It affects how we think, feel, and act, and helps determine how we handle stress, relate to others, and make choices. 
+      While one's mental state may be different from person to person at different times, there are still steps that we can take in order to help ourselves.</p>
+    </p>
+    </div>
+  </div>
+
+  <div class="sec3">
+    <!--This is where the statistics will be displayed and adjusted in my website using both icons, images, and text-->
+    <div class="text3">
+      <img src="mentalhealthwebsite-pictures/heart.svg">
+      <p class="text3-1">Approximately 66.7% of students surveyed hhave experienced some form of emotional problems in the past few weeks</p>
+      <img src="mentalhealthwebsite-pictures/arrow.svg">
+      <p class="text3-2">58.3% of students agreed that their mental health state has a large impact on their quality of work</p>
+    </div>
+    <img class="image3" src="mentalhealthwebsite-pictures/graph3.png" alt="Statistics">
+    <p class="text3-3">83.4% of students surveyed never reached out to really talk about these problems with someone else.</p>
+  </div>
+
+    <!--This section displays a series of smaller divs that when clicked on, will lead users to other pages and help facilitate navigation-->
+    <div class="sec4">
+      <p class="text4">
+      No matter who it is, there are all steps that we can take to reach out to the people around us. If you need someone to talk to, our qualified counsellors are always
+      ready to schedule meetings with you in order to provide you with the help you needed.
+  </p>
+    <div class="sec45">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZ7QX6vh8rJaWVQTrFP4QTGu0DSLw4C1Qr3VdNYV2V_eb4fw/viewform">
+      <div class="sec4-1">
+        <img class="sec4-image" src="mentalhealthwebsite-pictures/mentalhealth.png" alt="image">
+        <p class="text4">Scheduling Form</p>
+      </div>
+      </a>
+    
+      <a href="ourteam.html">
+      <div class="sec4-2">
+        <img class="sec4-image" src="mentalhealthwebsite-pictures/ourteam.png" alt="image">
+        <p class="text4">Our Team</p>
+      </div>
+      </a>
+
+      <a href="howitworks.html">
+      <div class="sec4-3">
+        <img class="sec4-image" src="mentalhealthwebsite-pictures/scheduling.png" alt="image">
+        <p class="text4">How It Works</p>
+      </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!--This is the footoer of the website, which displays all the contact information as well as the navigation system just 
+so I am able to maximize making navigation easy for users-->
+<div class="footer">
+  <img class="footer-logo" src="mentalhealthwebsite-pictures/footerlogo.png" alt="AISVN Counselling Footer Logo">
+  <div class="footer-sitemap"> 
+    <p class="footer-header"><u>Navigation</u></p>
+    <p class="footer-text">
+    <a href="index.html">Home</a> 
+    <br><br><a href="ourteam.html">Our Team</a>
+    <br><br><a href="howitworks.html">How It Works</a>
+    <br><br><a href="learnmore.html">Learn More</a>
+    </p>
+  </div>
+
+  <!--I also made sure to consistently use divs like these throughout my site so that it's easier to code different sections and adjust their
+  CSS properties-->
+  <div class="footer-contacts">
+    <p class="footer-header"><u>Contacts</u></p>
+    <p class="footer-text">
+      <img class="icon" src="mentalhealthwebsite-pictures/email.svg"><a href="info@ais.edu.vn">info@ais.edu.vn</a> 
+    <br><br><img class="icon" src="mentalhealthwebsite-pictures/map.svg"><a href="ourteam.html">220 Nguyen Van Tao,
+      Nha Be, HCMC</a>
+    <br><br><img class="icon" src="mentalhealthwebsite-pictures/phone.svg"><a href="howitworks.html">(+8428) 3780 0909</a>
+    <br><br><img class="icon" src="mentalhealthwebsite-pictures/school.svg"><a href="https://ais.edu.vn">School Home Page</a> 
+    </p>
+  </div>
+</div>
+
+  
+
+
+
+</body>
+</html>

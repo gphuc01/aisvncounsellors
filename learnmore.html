@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  <meta name="author"coontent="Ken Luu">
+  <link rel="stylesheet" href="styles/learnmore.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Josefin+Sans&family=Playfair+Display&family=Teko&display=swap" rel="stylesheet">
+  <title>AISVN Counselling - Learn More</title>
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("nav").style.top = "0";
+      } else {
+        document.getElementById("nav").style.top = "-183px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+</head>
+<body>
+  <div id="nav">
+    <nav class="navigation">
+      <div class="top-bar">
+        <a href="index.html"><img class="website-logo" src="mentalhealthwebsite-pictures/counsellinglogo.png" alt="AISVN Counselling Logo"></a>
+      </div>
+      <div class="navbar">
+        <input type="checkbox" class="toggle-menu">
+        <div class="hamburger"></div>
+  
+        <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="ourteam.html" >Our Team</a></li>
+        <li class="nav-item"><a href="howitworks.html">How It Works</a></li>
+        <li class="nav-item"><a href="learnmore.html">Learn More</a></li>
+        </ul>
+      </div>
+  
+    </nav>
+  </div>
+
+<div class="learn-more-content">
+  <!--Here, I used more headings and text that can simplify the methods that people can use in order to reach out to us-->
+  <div class="learn">
+    <h1>Contact and Further Information</h1>
+    <p class="text">
+      For more information on mental health issues or any further inquiries, 
+      feel free to email us at <a href="info@ais.edu.vn"><span>info@ais.edu.vn</span></a> or explore some of the sources that we've provided in the section below!
+    </p>
+    <!--Since we're focusing on mental health, I also make sure to create a section that provides some articles that audiences can read and explore
+    in order to become familiar with the topic more. Each one of the smaller divs help specify each content box so that it's easier to 
+  move them around in CSS-->
+    <p class="article-topic">FEATURED ARTICLES</p>
+    <div class="articles">
+      <a href="https://www.choosingtherapy.com/high-school-graduation-depression-anxiety/">
+      <div class="article1">
+        <img class="article-image" src="mentalhealthwebsite-pictures/mentalhealth.png" alt="image">
+        <p class="article-text">Dealing with Depression and Mental Anxiety</p>
+        <p class="article-description">How to Deal With High School Graduation Depression & Anxiety</p>
+      </div>
+      </a>
+    
+      <a href="https://www.cdc.gov/childrensmentalhealth/data.html">
+      <div class="article2">
+        <img class="article-image" src="mentalhealthwebsite-pictures/ourteam.png" alt="image">
+        <p class="article-text">CDC Mental Health Statistics</p>
+        <p class="article-description">Facts about mental health and behaviour problems by ages</p>
+      </div>
+      </a>
+
+      <a href="https://www.npr.org/sections/health-shots/2013/12/02/246599742/school-stress-takes-a-toll-on-health-teens-and-parents-say">
+      <div class="article3">
+        <img class="article-image" src="mentalhealthwebsite-pictures/scheduling.png" alt="image">
+        <p class="article-text">School Stress on Student Mental Health</p>
+        <p class="article-description">How to Deal With High School Graduation Depression & Anxiety</p>
+      </div>
+      </a>
+    </div>
+    
+</div>
+
+<div class="footer">
+  <img class="footer-logo" src="mentalhealthwebsite-pictures/footerlogo.png" alt="AISVN Counselling Footer Logo">
+  <div class="footer-sitemap"> 
+    <p class="footer-header"><u>Navigation</u></p>
+    <p class="footer-text">
+    <a href="index.html">Home</a> 
+    <br><br><a href="ourteam.html">Our Team</a>
+    <br><br><a href="howitworks.html">How It Works</a>
+    <br><br><a href="learnmore.html">Learn More</a>
+    </p>
+  </div>
+  <div class="footer-contacts">
+    <p class="footer-header"><u>Contacts</u></p>
+    <p class="footer-text">
+      <img class="icon" src="mentalhealthwebsite-pictures/email.svg"><a href="info@ais.edu.vn">info@ais.edu.vn</a> 
+    <br><br><img class="icon" src="mentalhealthwebsite-pictures/map.svg"><a href="ourteam.html">220 Nguyen Van Tao,
+      Nha Be, HCMC</a>
+    <br><br><img class="icon" src="mentalhealthwebsite-pictures/phone.svg"><a href="howitworks.html">(+8428) 3780 0909</a>
+    <br><br><img class="icon" src="mentalhealthwebsite-pictures/school.svg"><a href="https://ais.edu.vn">School Home Page</a> 
+    </p>
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  <meta name="author"coontent="Ken Luu">
+  <link rel="stylesheet" href="styles/howitworks.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Josefin+Sans&family=Playfair+Display&family=Teko&display=swap" rel="stylesheet">
+  <title>AISVN Counselling - How It Works</title>
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("nav").style.top = "0";
+      } else {
+        document.getElementById("nav").style.top = "-183px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+</head>
+
+<body>
+  <div id="nav">
+    <nav class="navigation">
+      <div class="top-bar">
+        <a href="index.html"><img class="website-logo" src="mentalhealthwebsite-pictures/counsellinglogo.png" alt="AISVN Counselling Logo"></a>
+      </div>
+      <div class="navbar">
+        <input type="checkbox" class="toggle-menu">
+        <div class="hamburger"></div>
+  
+        <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="ourteam.html" >Our Team</a></li>
+        <li class="nav-item"><a href="howitworks.html">How It Works</a></li>
+        <li class="nav-item"><a href="learnmore.html">Learn More</a></li>
+        </ul>
+      </div>
+  
+    </nav>
+  </div>
+
+
+<div class="howitworks-content">
+  <!--This section briefly introduces the audiences to how the scheduling is done here and recites the purpose-->
+    <div class="scheduling-text">
+      <h1>Scheduling an Appointment</h1>
+      <p>Through our appointments, we wish to provide you with the help you need and the best experience you can get 
+        from qualified professionals at our school, no matter who you are.
+      </p>
+    </div>
+
+    <!--This section displays the content of the website and specifies things more specifically here about how we want to reach everyone-->
+    <div class="on-off">
+      <div class="on-off-text">
+       <h1>Online and Offline</h1>
+      <p>We understand that not everyone may feel comfortable with a face to face meeting offline. 
+        Here at AISVN, you can also schedule meetings online if that's what you want to do. We're always here to listen to
+        you and provide you with the help you need to enjoy a happy life.
+      </p>
+       <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZ7QX6vh8rJaWVQTrFP4QTGu0DSLw4C1Qr3VdNYV2V_eb4fw/viewform">
+        <button>Schedule an Appointment</button>
+      </a>
+      </div>
+      <img src="mentalhealthwebsite-pictures/library.jpeg" alt="Scheduling Visual">
+    </div>
+
+    <!--This is where I included a picture of the weekly schedule so that people know when to book-->
+    <div class="week-schedule">
+      <h1>Weekly Booking Schedule</h1>
+      <img id="calendar-image" src="mentalhealthwebsite-pictures/Schedule.png" alt="Calendar">
+    </div>
+    <!--This is where how it works with asking questions about mental health or the site works is specified-->
+    <div class="question">
+    <div class="inquiries">
+      <h1>Inquiries</h1>
+      <p>For those who may have any additional questions about mental health, feel free to submit a question using the form below or read through our current list.</p>
+    </div>
+    <!--This is where I would be displaying the most commonly asked questions as a heads up for people to understand or 
+    get most questions answered right away-->
+    <div class="qadiscuss">
+    <h2>Frequently-Asked Questions</h2>
+      Q: What is mental health? <br><br>
+      A: Mental health refers to our emotional, pyschological, and social well-being. Mental health plays a huge role in affecting things like how we make choices and handle stress in our lives.<br><br>
+      Q: When should I reach out for help? <br><br>
+      A: No matter how severe your condition is, you can always reach out to help at any time. If anything in general is affect your ability to do well in school or enjoy life, feel free to reach out for help. With us, all you really have to do is fill out the scheduling form to book an appointment.<br><br>
+      Q: What are some ways we improve our mental health? <br><br>
+      A: Some of the most important things that can help us improve and maintain a good mental health and wellbeing includes things that
+      like sleeping properly, excercising, and  doing things that can help us calm down like talking with our friends or writing a diary.<br><br>
+      </p>
+
+      <!--This part of the form utilizes and outside source consists of these different inputs that will cause the user to be redirected
+      towards a thank you page as well as send information via email to my email temporarily so that it could be worked with.
+    Since this does not specifically asks for any personal information other than the email as this is how we'll get back to them if we
+    are unable to include the questions into the frequently asked section and this is also gonna be kept
+  confidential, the users should still fill at ease-->
+      <p id="form">Have a question? Feel free to submit a question by filling out the form below!<p>
+      <form action="https://formsubmit.co/4328b3023d8cf7d3b9672ccf5040744b" method="POST">
+        <input type="email" name="email" required placeholder="Your Email">
+        <input type="text" name="question" required placeholder="Submit your question here">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    </div>
+
+</div>
+
+<div class="footer">
+  <img class="footer-logo" src="mentalhealthwebsite-pictures/footerlogo.png" alt="AISVN Counselling Footer Logo">
+  <div class="footer-sitemap"> 
+    <p class="footer-header"><u>Navigation</u></p>
+    <p class="footer-text">
+    <a href="index.html">Home</a> 
+    <br><br><a href="ourteam.html">Our Team</a>
+    <br><br><a href="howitworks.html">How It Works</a>
+    <br><br><a href="learnmore.html">Learn More</a>
+    </p>
+  </div>
+  <div class="footer-contacts">
+    <p class="footer-header"><u>Contacts</u></p>
+    <p class="footer-text">
+      <img class="icon" src="mentalhealthwebsite-pictures/email.svg"><a href="info@ais.edu.vn">info@ais.edu.vn</a> 
+    <br><br><img class="icon" src="mentalhealthwebsite-pictures/map.svg"><a href="ourteam.html">220 Nguyen Van Tao,
+      Nha Be, HCMC</a>
+    <br><br><img class="icon" src="mentalhealthwebsite-pictures/phone.svg"><a href="howitworks.html">(+8428) 3780 0909</a>
+    <br><br><img class="icon" src="mentalhealthwebsite-pictures/school.svg"><a href="https://ais.edu.vn">School Home Page</a> 
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
